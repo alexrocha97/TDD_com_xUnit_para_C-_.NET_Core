@@ -1,2 +1,4 @@
 test.MeuPrimeiroTest.Deve_ser_iguais_as_variaveis
 test.Domain.Entidades.CursoTest.Deve_Criar_Curso
+test.Domain.Entidades.CursoTest.Nao_Deve_Curso_Ter_Um_Nome_Vazio
+test.Domain.Entidades.CursoTest.Nao_Deve_Curso_Ter_Um_Nome_Nullo
