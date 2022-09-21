@@ -1,27 +1,62 @@
 using ExpectedObjects;
 using test._Util;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace test.Domain.Entidades
 {
-    public class Cursotest
+    // Critério de aceite 
+
+    // Criar o curso com o nome, carga horária, publico alvo e valor
+    // As opções do público alvo é estudante, universitário, empregada e empreendedor
+    // Todos os campos do curso são obrigatórios
+    // Curso deve ter uma descrição
+
+    public class Cursotest : IDisposable
     {
+        private readonly ITestOutputHelper _output;
+        private readonly string _nome;
+        private readonly double _cargaHoraria;
+        private readonly PublicoAlvo _publicoAlvo;
+        private readonly int _valorCurso;
+        private readonly string _descricao;
+
+
+        public void Dispose()
+        {
+            _output.WriteLine("Disposible sendo executado..");
+        }
+        public Cursotest(ITestOutputHelper output)
+        {
+            _output = output;
+            _output.WriteLine("Construtor sendo executado..");
+
+            _nome = "Curso de inglês";
+            _cargaHoraria = 19.00;
+            _publicoAlvo = PublicoAlvo.Estudante;
+            _valorCurso = 150;
+            _descricao = "Uma descrição";
+
+        }
+
         [Fact]
         public void Deve_Criar_Curso()
         {
             // Org
             var cursoEsperado = new 
             {
-                nome = "Curso de inglês", 
-                cargaHoraria = (double)19.00, 
-                publicoAlvo = PublicoAlvo.Estudante, 
-                valorCurso = (int)150
+                nome = _nome, 
+                descricao = _descricao,
+                cargaHoraria = _cargaHoraria, 
+                publicoAlvo = _publicoAlvo, 
+                valorCurso = _valorCurso
             };
 
             // Ação
             var curso = new Curso
             (
                 cursoEsperado.nome, 
+                cursoEsperado.descricao,
                 cursoEsperado.cargaHoraria, 
                 cursoEsperado.publicoAlvo, 
                 cursoEsperado.valorCurso
@@ -38,22 +73,23 @@ namespace test.Domain.Entidades
         public void Nao_Deve_Curso_Ter_Um_Nome_Invalido(string nomeInvalido)
         {
             // Organização
-            var cursoEsperado = new 
-                {
-                    nome = "Curso de inglês", 
-                    cargaHoraria = (double)19.00, 
-                    publicoAlvo = PublicoAlvo.Estudante, 
-                    valorCurso = (int)150
-                };
+            // var cursoEsperado = new 
+            //     {
+            //         nome = "Curso de inglês", 
+            //         cargaHoraria = (double)19.00, 
+            //         publicoAlvo = PublicoAlvo.Estudante, 
+            //         valorCurso = (int)150
+            //     };
             // Ação
             
 
             // Assert
             Assert.Throws<ArgumentException>(() => new Curso(
                     nomeInvalido, 
-                    cursoEsperado.cargaHoraria, 
-                    cursoEsperado.publicoAlvo, 
-                    cursoEsperado.valorCurso
+                    _descricao,
+                    _cargaHoraria, 
+                    _publicoAlvo, 
+                    _valorCurso
                 )).ComMensagem("Nome inválido");
         }
 
@@ -64,22 +100,23 @@ namespace test.Domain.Entidades
         public void Nao_Deve_Curso_CargaHoraria_Menor_Que_Um(double cargaHorariaInvalida)
         {
             // Organização
-            var cursoEsperado = new 
-                {
-                    nome = "Curso de inglês", 
-                    cargaHoraria = (double)19.00, 
-                    publicoAlvo = PublicoAlvo.Estudante, 
-                    valorCurso = (int)150
-                };
+            // var cursoEsperado = new 
+            //     {
+            //         nome = "Curso de inglês", 
+            //         cargaHoraria = (double)19.00, 
+            //         publicoAlvo = PublicoAlvo.Estudante, 
+            //         valorCurso = (int)150
+            //     };
             // Ação
            
 
             // Assert
             Assert.Throws<ArgumentException>(() => new Curso(
-                    cursoEsperado.nome, 
+                    _nome, 
+                    _descricao,
                     cargaHorariaInvalida, 
-                    cursoEsperado.publicoAlvo, 
-                    cursoEsperado.valorCurso
+                    _publicoAlvo, 
+                    _valorCurso
                 )).ComMensagem("Carga Horaria inválido");
         }
 
@@ -90,20 +127,21 @@ namespace test.Domain.Entidades
         public void Nao_Deve_Curso_Um_Valor_Menor_Que_Um(int valorInvalido)
         {
             // Organização
-            var cursoEsperado = new 
-                {
-                    nome = "Curso de inglês", 
-                    cargaHoraria = (double)19.00, 
-                    publicoAlvo = PublicoAlvo.Estudante, 
-                    valorCurso = (int)150
-                };
+            // var cursoEsperado = new 
+            //     {
+            //         nome = "Curso de inglês", 
+            //         cargaHoraria = (double)19.00, 
+            //         publicoAlvo = PublicoAlvo.Estudante, 
+            //         valorCurso = (int)150
+            //     };
             // Ação
 
             // Assert
             Assert.Throws<ArgumentException>(() => new Curso(
-                        cursoEsperado.nome, 
-                        cursoEsperado.cargaHoraria, 
-                        cursoEsperado.publicoAlvo, 
+                        _nome, 
+                        _descricao,
+                        _cargaHoraria, 
+                        _publicoAlvo, 
                         valorInvalido
                     )).ComMensagem("Valor inválido");
         }
@@ -113,11 +151,13 @@ namespace test.Domain.Entidades
     {
         public Curso(
             string nome, 
+            string descricao,
             double cargaHoraria, 
             PublicoAlvo publicoAlvo, 
             int valorCurso)
         {
             this.nome = nome;
+            this.descricao = descricao;
             this.cargaHoraria = cargaHoraria;
             this.publicoAlvo = publicoAlvo;
             this.valorCurso = valorCurso;
@@ -126,6 +166,7 @@ namespace test.Domain.Entidades
         }
 
         public string nome { get; private set; }
+        public string descricao { get; set; }
         public double cargaHoraria { get; private set; }
         public PublicoAlvo publicoAlvo { get; private set; }
         public int valorCurso { get; private set; }
