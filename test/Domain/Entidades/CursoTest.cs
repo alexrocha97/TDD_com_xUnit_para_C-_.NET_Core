@@ -1,4 +1,5 @@
 using ExpectedObjects;
+using test._Builders;
 using test._Util;
 using Xunit;
 using Xunit.Abstractions;
@@ -84,13 +85,11 @@ namespace test.Domain.Entidades
             
 
             // Assert
-            Assert.Throws<ArgumentException>(() => new Curso(
-                    nomeInvalido, 
-                    _descricao,
-                    _cargaHoraria, 
-                    _publicoAlvo, 
-                    _valorCurso
-                )).ComMensagem("Nome inválido");
+            Assert.Throws<ArgumentException>(() => 
+                CursoBuilder.Novo()
+                .ComNome(nomeInvalido)
+                .Build())
+                .ComMensagem("Nome inválido");
         }
 
         [Theory]
@@ -111,13 +110,10 @@ namespace test.Domain.Entidades
            
 
             // Assert
-            Assert.Throws<ArgumentException>(() => new Curso(
-                    _nome, 
-                    _descricao,
-                    cargaHorariaInvalida, 
-                    _publicoAlvo, 
-                    _valorCurso
-                )).ComMensagem("Carga Horaria inválido");
+            Assert.Throws<ArgumentException>(() => 
+                CursoBuilder.Novo()
+                .ComCargaHoraria(cargaHorariaInvalida)
+                .Build()).ComMensagem("Carga Horaria inválido");
         }
 
         [Theory]
@@ -137,13 +133,11 @@ namespace test.Domain.Entidades
             // Ação
 
             // Assert
-            Assert.Throws<ArgumentException>(() => new Curso(
-                        _nome, 
-                        _descricao,
-                        _cargaHoraria, 
-                        _publicoAlvo, 
-                        valorInvalido
-                    )).ComMensagem("Valor inválido");
+            Assert.Throws<ArgumentException>(() => 
+                CursoBuilder.Novo()
+                .ComValor(valorInvalido)
+                .Build())
+                .ComMensagem("Valor inválido");
         }
     }
 
