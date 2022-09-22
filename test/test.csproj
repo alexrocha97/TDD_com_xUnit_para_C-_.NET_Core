@@ -17,5 +17,6 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="ExpectedObjects" Version="3.5.4"/>
+    <PackageReference Include="Bogus" Version="34.0.2"/>
   </ItemGroup>
 </Project>

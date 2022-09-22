@@ -1,22 +1,48 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using test.Domain.Entidades;
 
 namespace test._Builders
 {
     public class CursoBuilder
     {
-        private readonly string _nome;
-        private readonly double _cargaHoraria;
-        private readonly PublicoAlvo _publicoAlvo;
-        private readonly int _valorCurso;
-        private readonly string _descricao;
+        private string _nome = "Curso de inglês";
+        private double _cargaHoraria = 19.00;
+        private PublicoAlvo _publicoAlvo = PublicoAlvo.Estudante;
+        private int _valorCurso = 150;
+        private string _descricao = "Uma descrição";
 
         public static CursoBuilder Novo()
         {
             return new CursoBuilder();
+        }
+
+        public CursoBuilder ComNome(string nome)
+        {
+            _nome = nome;
+            return this;
+        }
+
+        public CursoBuilder ComDescricao(string descricao)
+        {
+            _descricao = descricao;
+            return this;
+        }
+
+        public CursoBuilder ComCargaHoraria(double cargahoraria)
+        {
+            _cargaHoraria = cargahoraria;
+            return this;
+        }
+
+        public CursoBuilder ComValor(int cursovalor)
+        {
+            _valorCurso = cursovalor;
+            return this;
+        }
+
+        public CursoBuilder ComPublico(PublicoAlvo publicoAlvo)
+        {
+            _publicoAlvo = publicoAlvo;
+            return this;
         }
 
         public Curso Build()
