@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Fh5u0tqHTXW6hJWTO3rblP9iUKyDAJAZiTw1+1B2SCJUBbBWa3MewFYZPS+DOXdpIYS8aPMW2Ti/ZQs5szdX3A==",
+  "dgSpecHash": "nwxPyxIxzaGJFkJg7Xy+awGgToWtai4tQinBXmiUJ5vmAo7FpbNEhsQcYOPLFxaoEmohSAhmZOHHHjZW4r4Crg==",
   "success": true,
   "projectFilePath": "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\TDD_com_xUnit\\test\\test.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ventu\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\ventu\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\ventu\\.nuget\\packages\\expectedobjects\\3.5.4\\expectedobjects.3.5.4.nupkg.sha512",
     "C:\\Users\\ventu\\.nuget\\packages\\microsoft.codecoverage\\17.3.1\\microsoft.codecoverage.17.3.1.nupkg.sha512",
