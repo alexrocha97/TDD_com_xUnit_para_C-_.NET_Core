@@ -1,3 +1,4 @@
+using Bogus;
 using ExpectedObjects;
 using test._Builders;
 using test._Util;
@@ -29,15 +30,25 @@ namespace test.Domain.Entidades
         }
         public Cursotest(ITestOutputHelper output)
         {
+            var faker = new Faker();
             _output = output;
             _output.WriteLine("Construtor sendo executado..");
 
-            _nome = "Curso de inglês";
-            _cargaHoraria = 19.00;
+            _nome = faker.Random.Word();
+            _cargaHoraria = faker.Random.Double(50, 1000);
             _publicoAlvo = PublicoAlvo.Estudante;
-            _valorCurso = 150;
-            _descricao = "Uma descrição";
+            _valorCurso = faker.Random.Int(100, 1000);
+            _descricao = faker.Lorem.Paragraph();
 
+            // Testes para exibir dados fakes
+
+            // var faker = new Faker();
+            // var num = faker.Random.Double(1, 100);
+            // var empresa = faker.Company.CompanyName();
+
+            // _output.WriteLine($"Double {num}");
+            // _output.WriteLine($"Empresa {empresa}");
+            // _output.WriteLine($"Email {faker.Person.Email}");
         }
 
         [Fact]
