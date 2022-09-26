@@ -39,16 +39,6 @@ namespace test.Domain.Entidades
             _publicoAlvo = PublicoAlvo.Estudante;
             _valorCurso = faker.Random.Int(100, 1000);
             _descricao = faker.Lorem.Paragraph();
-
-            // Testes para exibir dados fakes
-
-            // var faker = new Faker();
-            // var num = faker.Random.Double(1, 100);
-            // var empresa = faker.Company.CompanyName();
-
-            // _output.WriteLine($"Double {num}");
-            // _output.WriteLine($"Empresa {empresa}");
-            // _output.WriteLine($"Email {faker.Person.Email}");
         }
 
         [Fact]
