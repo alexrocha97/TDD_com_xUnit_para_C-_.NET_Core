@@ -98,3 +98,4 @@ c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_P
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\obj\Debug\net6.0\test.genruntimeconfig.cache
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\obj\Debug\net6.0\ref\test.dll
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\ExpectedObjects.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Bogus.dll
