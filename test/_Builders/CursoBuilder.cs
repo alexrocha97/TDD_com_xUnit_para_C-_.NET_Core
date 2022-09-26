@@ -1,4 +1,5 @@
-using test.Domain.Entidades;
+using src.Domain.Entidades;
+using src.Enums;
 
 namespace test._Builders
 {

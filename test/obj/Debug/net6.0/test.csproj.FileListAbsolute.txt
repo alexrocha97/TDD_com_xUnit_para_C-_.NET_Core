@@ -99,3 +99,15 @@ c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_P
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\obj\Debug\net6.0\ref\test.dll
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\ExpectedObjects.dll
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Bogus.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\CoverletSourceRootsMapping
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\src.deps.json
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\src.runtimeconfig.json
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\appsettings.Development.json
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\appsettings.json
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\src.exe
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\src.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Microsoft.OpenApi.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\src.pdb
