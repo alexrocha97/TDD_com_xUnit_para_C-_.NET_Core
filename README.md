@@ -16,3 +16,13 @@
 <br>Aluno não deve afetuar uma matricula, caso a primeira esteja aberta
 <br>Alguns aluno não pagam o valor do curso cheio, nesse caso é dado um desconto. Porém o nunca aluno deverá pagar mais do que o valor do curso
 <br>No momento da matricula, o público alvo do curso e aluno devem ser o mesmo
+
+
+### TDD (Test Driven Development) - Desenvolvimento Orientado por Testes 
+<p>
+É uma abordagem para escrever os testes antes mesmo de desenvolver o código do software</p>
+<h2> Benefícios: </h2>
+<br>1 - Ser executado a todo o momento (feedback rápidos)
+<br>2 - Qualidade de código (pode validar se a entrada está correta com a saída)
+<br>3 - Documentação (Criando teste e cénarios você aprenderá a documentar os passo a passo do método ou regra)
+<br><img src="test/img/Screenshot_1.png" width="260" height="250">
