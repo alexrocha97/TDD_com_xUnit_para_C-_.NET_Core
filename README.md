@@ -26,3 +26,8 @@
 <br>2 - Qualidade de código (pode validar se a entrada está correta com a saída)
 <br>3 - Documentação (Criando teste e cénarios você aprenderá a documentar os passo a passo do método ou regra)
 <br><img src="test/img/Screenshot_1.png" width="260" height="250">
+
+<h2> Onion Architecture </h2>
+<br> Não depender tanto de outras funções
+<br> O motivo de uma boa arquitetura é evitar acoplamento desnecessário
+<br><img src="test/img/arquiOnionArchitecture.png" width="260" height="250">
