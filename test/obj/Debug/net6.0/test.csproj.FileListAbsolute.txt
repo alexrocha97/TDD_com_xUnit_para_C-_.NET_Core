@@ -111,3 +111,5 @@ c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_P
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Microsoft.OpenApi.dll
 c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\src.pdb
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Castle.Core.dll
+c:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\TDD_com_xUnit\test\bin\Debug\net6.0\Moq.dll

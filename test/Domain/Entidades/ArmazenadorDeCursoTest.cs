@@ -25,21 +25,21 @@ namespace test.Domain.Entidades
             AdicionarCurso.Armazenar(cursoDto);
 
             // Then
-            cursoRepositoryMoq.Verify(x => x.Adicionar(It.IsAny<Curso>()));
+            cursoRepositoryMoq.Verify(x => x.Armazenar(It.Is<Curso>(c => c.nome == cursoDto.Nome)));
         }
     }
     
     public interface ICursoRepository
     {
-        void Adicionar(Curso curso);
+        void Armazenar(Curso curso);
     }
 
     public class ArmazenadorDeCurso
     {
-        private readonly ICursoRepository cursoRepository;
-        public ArmazenadorDeCurso(ICursoRepository _cursoRepository)
+        private readonly ICursoRepository _cursoRepository;
+        public ArmazenadorDeCurso(ICursoRepository cursoRepository)
         {
-            cursoRepository = _cursoRepository;
+            _cursoRepository = cursoRepository;
         }
 
         public void Armazenar(cursoDto curso)
@@ -51,9 +51,7 @@ namespace test.Domain.Entidades
     public class cursoDto
     {
         public cursoDto()
-        {
-            
-        }
+        {}
         public cursoDto(string Nome, string Descricao,double CargaHoraria,int PublicoAlvoId, int Valor)
         {
             this.Nome = Nome;
