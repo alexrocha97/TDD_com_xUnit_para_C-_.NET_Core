@@ -5,35 +5,35 @@ namespace src.Domain.Entidades
     public class Curso
     {
         public Curso(
-            string nome, 
-            string descricao,
-            double cargaHoraria, 
-            PublicoAlvo publicoAlvo, 
-            int valorCurso)
+            string Nome, 
+            string Descricao,
+            double CargaHoraria, 
+            PublicoAlvo PublicoAlvo, 
+            int ValorCurso)
         {
-            this.nome = nome;
-            this.descricao = descricao;
-            this.cargaHoraria = cargaHoraria;
-            this.publicoAlvo = publicoAlvo;
-            this.valorCurso = valorCurso;
+            this.Nome = Nome;
+            this.Descricao = Descricao;
+            this.CargaHoraria = CargaHoraria;
+            this.PublicoAlvo = PublicoAlvo;
+            this.ValorCurso = ValorCurso;
 
             ValidarCurso();
         }
 
-        public string nome { get; private set; }
-        public string descricao { get; set; }
-        public double cargaHoraria { get; private set; }
-        public PublicoAlvo publicoAlvo { get; private set; }
-        public int valorCurso { get; private set; }
+        public string Nome { get; private set; }
+        public string Descricao { get; set; }
+        public double CargaHoraria { get; private set; }
+        public PublicoAlvo PublicoAlvo { get; private set; }
+        public int ValorCurso { get; private set; }
 
 
         public void ValidarCurso()
         {
-            if(String.IsNullOrEmpty(nome))
+            if(String.IsNullOrEmpty(Nome))
                 throw new ArgumentException("Nome inválido");
-            else if(cargaHoraria < 1)
+            else if(CargaHoraria < 1)
                 throw new ArgumentException("Carga Horaria inválido");
-            else if(valorCurso < 1)
+            else if(ValorCurso < 1)
                 throw new ArgumentException("Valor inválido");
         }
     }

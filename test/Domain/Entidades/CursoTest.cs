@@ -49,21 +49,21 @@ namespace test.Domain.Entidades
             // Org
             var cursoEsperado = new 
             {
-                nome = _nome, 
-                descricao = _descricao,
-                cargaHoraria = _cargaHoraria, 
-                publicoAlvo = _publicoAlvo, 
-                valorCurso = _valorCurso
+                Nome = _nome, 
+                Descricao = _descricao,
+                CargaHoraria = _cargaHoraria, 
+                PublicoAlvo = _publicoAlvo, 
+                ValorCurso = _valorCurso
             };
 
             // Ação
             var curso = new Curso
             (
-                cursoEsperado.nome, 
-                cursoEsperado.descricao,
-                cursoEsperado.cargaHoraria, 
-                cursoEsperado.publicoAlvo, 
-                cursoEsperado.valorCurso
+                cursoEsperado.Nome, 
+                cursoEsperado.Descricao,
+                cursoEsperado.CargaHoraria, 
+                cursoEsperado.PublicoAlvo, 
+                cursoEsperado.ValorCurso
             );
             
             // Assert
